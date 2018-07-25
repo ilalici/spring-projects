@@ -1,4 +1,4 @@
-# spring-projects - Date Difference Calculator
+# Date Difference Calculator
 
 Clone the repository:
 $ git clone https://github.com/ilalici/spring-projects.git
