@@ -2,8 +2,8 @@
 
 To get the code:
 
-Clone the repository:
 
+Clone the repository:
 $ git clone https://github.com/ilalici/spring-projects.git
 
 
