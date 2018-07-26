@@ -1,7 +1,6 @@
 package com.DateDifference.model;
 
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class DateUtility {
 	
@@ -39,13 +38,8 @@ public class DateUtility {
 		int[] daysInMonth = {31,28,31,30,31,30,31,31,30,31,30,31},
 			  daysInMonthLeap = {31,29,31,30,31,30,31,31,30,31,30,31};
 		
-		StringBuilder sb = new StringBuilder();
-		sb.append(start.getYear()).append(start.getMonth()).append(start.getDay());
-		int totalDate1 = Integer.valueOf(sb.toString());
-		
-		sb.setLength(0);
-		sb.append(end.getYear()).append(end.getMonth()).append(end.getDay());		
-		int totalDate2 = Integer.valueOf(sb.toString());
+		int totalDate1 = start.getTotalDate();			
+		int totalDate2 = end.getTotalDate();
 		int total = 0;
 		
 		if(totalDate1 == totalDate2) {

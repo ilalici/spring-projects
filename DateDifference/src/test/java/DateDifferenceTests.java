@@ -1,4 +1,5 @@
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import org.junit.jupiter.api.Test;
 
@@ -42,5 +43,15 @@ public class DateDifferenceTests {
 		int total = DateUtility.calculateDays(d1,d2);
 		
 		 assertTrue(total == 0);
+	}
+	
+	@Test
+	public void testLeapYear() {
+		//Leap year
+		int leapYear = 2016;
+		int regularYear = 2001;
+		
+		 assertTrue(DateUtility.isLeapYear(leapYear));
+		 assertFalse(DateUtility.isLeapYear(regularYear));
 	}
 }

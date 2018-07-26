@@ -34,7 +34,7 @@ public class DateDifferenceController {
 		Map<String,String> formMap = new HashMap<String,String>();
 		
 		//Validate input		
-		String regex = "(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/((19|20)\\d\\d)";
+		String regex = "(0?[1-9]|1[012])/(0?[1-9]|[12][0-9]|3[01])/((19|20)\\d\\d)";
 		Pattern p = Pattern.compile(regex);
 		Matcher m = p.matcher(date1),m2 = p.matcher(date2);
 		Date d1 = null, d2 = null;
